@@ -1,14 +1,19 @@
 {
   "scripts": {
     "start": "parcel src/index.html",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
     "format": "prettier --write \"**/*.{js,less}\"",
     "lint": "eslint \"src/**/*.js\" --cache --fix -f table"
   },
   "devDependencies": {
     "@babel/core": "^7.4.4",
     "@babel/preset-env": "^7.4.4",
-    "eslint": "^5.16.0",
+    "eslint": "6.1.0",
+    "eslint-config-airbnb-base": "14.0.0",
     "eslint-config-prettier": "^4.2.0",
+    "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-prettier": "^3.0.1",
     "husky": "^2.2.0",
     "json-server": "^0.15.0",
