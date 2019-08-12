@@ -4,17 +4,24 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
+    "cypress:run": "cypress run",
+    "cypress:open": "cypress open",
+    "cypress": "start-server-and-test start http://localhost:1234 cypress:run",
     "format": "prettier --write \"**/*.{js,less}\"",
     "lint": "eslint \"src/**/*.js\" --cache --fix -f table"
   },
   "devDependencies": {
     "@babel/core": "^7.4.4",
     "@babel/preset-env": "^7.4.4",
+    "@testing-library/jest-dom": "^4.0.0",
     "babel-jest": "^24.8.0",
     "babel-polyfill": "^6.26.0",
+    "babel-preset-airbnb": "^4.0.1",
+    "cypress": "^3.4.1",
     "eslint": "6.1.0",
     "eslint-config-airbnb-base": "14.0.0",
     "eslint-config-prettier": "^4.2.0",
+    "eslint-plugin-cypress": "^2.6.1",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jest": "^22.15.0",
     "eslint-plugin-prettier": "^3.0.1",
@@ -24,7 +31,8 @@
     "less": "^3.9.0",
     "lint-staged": "^8.1.6",
     "parcel-bundler": "^1.12.3",
-    "prettier": "^1.17.0"
+    "prettier": "^1.17.0",
+    "start-server-and-test": "^1.10.0"
   },
   "husky": {
     "hooks": {

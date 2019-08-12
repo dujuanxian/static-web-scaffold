@@ -1,6 +1,14 @@
 {
-  "extends": ["airbnb-base", "prettier", "plugin:jest/recommended"],
-  "plugins": ["prettier", "jest"],
+  "extends": [
+    "airbnb-base",
+    "prettier",
+    "plugin:jest/recommended",
+    "plugin:cypress/recommended"
+  ],
+  "plugins": [
+    "prettier",
+    "jest"
+  ],
   "rules": {
     "prettier/prettier": "error",
     "jest/no-disabled-tests": "error",

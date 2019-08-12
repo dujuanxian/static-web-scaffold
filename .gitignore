@@ -11,3 +11,5 @@ yarn.lock
 .eslintcache
 dist/
 .cache/
+cypress/videos/*
+cypress/screenshots/*
